@@ -1,0 +1,24 @@
+#fimg{
+   display: inline;
+     vertical-align: text-bottom;
+    width: 8cm; height: 8cm;
+    float: left;
+    border: solid black;
+}
+#headone{
+    align: middle ;
+    color: brown;
+    font-size: 2cm;
+}
+#fp{
+    color: rgb(150, 100, 200);
+    font-size: 1cm;
+}
+#fd{
+    min-height: 8cm;
+    background-color: burlywood;
+}
+#sd{
+    font-size: x-large;
+   
+}
