@@ -13,6 +13,7 @@
 #fp{
     color: rgb(150, 100, 200);
     font-size: 1cm;
+    font-family: cursive;
 }
 #fd{
     min-height: 8cm;
@@ -21,4 +22,8 @@
 #sd{
     font-size: x-large;
    
+}
+#head3{
+    font-size: 1cm  ;
+    
 }
