@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 var userName= prompt ("what is your name?");
 alert ("Welcome "+userName);
 confirm("lets play guessing game");
