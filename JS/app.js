@@ -16,11 +16,11 @@ else{ console.log("wrong");
 alert("wrong");
    }
 var fruit= prompt("Do I like Apple?");
-if (fruit.toLocaleLowerCase()==="yes" || fruit.toLocaleLowerCase()==="y" ){
+if (fruit.toLowerCase()==="yes" || fruit.toLowerCase()==="y" ){
 console.log("no I do not");
 alert("no I do not ");
 }
-else if (fruit.toLocaleLowerCase()==="no" || fruit.toLocaleLowerCase()=== "n"){
+else if (fruit.toLowerCase()==="no" || fruit.toLowerCase()=== "n"){
 console.log("you are good!");
 alert("you are good!");
 }
@@ -30,11 +30,11 @@ alert("-1; you did not answer!!");
 }
 
 var movie = prompt("Is interstellar my favourate movie?");
-if (movie.toLocaleLowerCase()==="yes" || movie.toLocaleLowerCase()==="y"){
+if (movie.toLowerCase()==="yes" || movie.toLowerCase()==="y"){
 console.log("true");
 alert("true");
 }
-else if (movie.toLocaleLowerCase()==="" || movie.toLocaleLowerCase()===null){
+else if (movie.toLowerCase()==="" || movie.toeLowerCase()===null){
 console.log("you did not answer");
 alert("you did not answer");
 }
@@ -44,11 +44,11 @@ alert("false");
 }
 
 var facTecCompany = prompt(" Is apple my favourate company?")
-if(facTecCompany.toLocaleLowerCase()==="y" || facTecCompany.toLocaleLowerCase()==="y" ){
+if(facTecCompany.toLowerCase()==="y" || facTecCompany.toLowerCase()==="y" ){
 console.log("yes,I like its products");
 alert("yes,I like its products");
 }
-else if (facTecCompany.toLocaleLowerCase()=== null || facTecCompany.toLocaleLowerCase()===""){
+else if (facTecCompany.toLowerCase()=== null || facTecCompany.toLowerCase()===""){
 console.log("empty answer!");
 alert("empty answer!");
 }
@@ -59,11 +59,11 @@ alert("false");
 
 
 var basketBall = prompt("Do I like BasketBall yes or no ?")
-if(basketBall.toLocaleLowerCase()==="yes" || basketBall.toLocaleLowerCase()==="y"){
+if(basketBall.toLowerCase()==="yes" || basketBall.toLowerCase()==="y"){
 console.log("no I do not");
 alert("no I do not");
 }
-else if (basketBall.toLocaleLowerCase()==="no" || basketBall.toLocaleLowerCase()==="n"){
+else if (basketBall.toLowerCase()==="no" || basketBall.toLowerCase()==="n"){
 console.log("true");
 alert("true");
 }
