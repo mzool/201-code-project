@@ -1,4 +1,4 @@
-"use strict";
+/*"use strict";
 //Welcoming
 var userName = prompt("what is your name?");
 alert("Welcome " + userName);
@@ -83,11 +83,44 @@ alert("Welcome again " + userName);
 
 //end of lab one
 
-var trueAnswer= 3;
-var guissNumber = prompt("I put a number in my head, can you guess what it?");
-for(var i =1; i<=4; i++){
-if(guissNumber.parseInt() !== trueAnswer){
-   switch()
+// 6th question
+var trueAnswer = 3;
+for (var i = 1; i <= 4; i++) {
+   var guissNumber = prompt("I put a number in my head, can you guess what it?");
+   if (parseInt(guissNumber) === 3) { alert("Amazing!!!!"); break; }
+   if (parseInt(guissNumber) <= 2) {
+      alert("too low");
+   }
+   if (parseInt(guissNumber) >= 5) {
+      alert("too high");
+      if (i === 4) { alert("the answer is 3!"); }
+   }
+}*/
+// 7th question
+var countriesList = ["JORDAN", "ENGLAND", "UAE", "USA", "LEBANON", "PALASTINE"];
+var favcountry = prompt("Guess what is my fovourate countries? ALL LETTERS ARE CAPITAL ");
+switch (favcountry) {
+   case countriesList[0]:
+   case countriesList[1]:
+   case countriesList[2]:
+   case countriesList[3]:
+   case countriesList[4]:
+   case countriesList[5]:
+      alert("yes, " + favcountry + " is from my favourates");
+      console.log(favcountry);
+      break;
 }
 
+
 }
+
+
+
+
+
+
+
+
+
+
+
