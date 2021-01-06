@@ -99,20 +99,28 @@ for (var i = 1; i <= 4; i++) {
 // 7th question
 var countriesList = ["JORDAN", "ENGLAND", "UAE", "USA", "LEBANON", "PALASTINE"];
 var favcountry = prompt("Guess what is my fovourate countries? ALL LETTERS ARE CAPITAL ");
-switch (favcountry) {
-   case countriesList[0]:
-   case countriesList[1]:
-   case countriesList[2]:
-   case countriesList[3]:
-   case countriesList[4]:
-   case countriesList[5]:
-      alert("yes, " + favcountry + " is from my favourates");
-      console.log(favcountry);
-      break;
+
+for (var i = 1; i <= 5; i++) {
+   switch (favcountry) {
+      case countriesList[0]:
+      case countriesList[1]:
+      case countriesList[2]:
+      case countriesList[3]:
+      case countriesList[4]:
+      case countriesList[5]:
+         alert("yes, " + favcountry + " is from my favourates");
+         console.log(favcountry);
+         var i = 6;
+         break;
+      case null:
+      case "":
+         var favcountry = prompt("Guess what is my fovourate countries? ALL LETTERS ARE CAPITAL ");
+
+   }
+
 }
 
 
-}
 
 
 
