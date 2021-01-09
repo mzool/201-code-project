@@ -8,14 +8,14 @@ confirm("lets play yes/no game");
 
 function yes(Inputs) {
    var userInputs = Inputs;
-   while (userInputs.toLowerCase() !== 'yes' && userInputs.toLowerCase() !== 'y' && userInputs.toLowerCase() !== 'no' && userInputs.toLowerCase() !== 'n') { var userInputs = prompt('Invalid answer!'); }
+   while (userInputs === '' || userInputs === null) { var userInputs = prompt('Invalid answer!'); }
    if (userInputs.toLowerCase() === 'yes' || userInputs.toLowerCase() === 'y') { alert("True"); grade++; }
    else { alert("False"); }
 }
 
 function no(Inputs) {
    var userInputs = Inputs;
-   while (userInputs.toLowerCase() !== 'yes' && userInputs.toLowerCase() !== 'y' && userInputs.toLowerCase() !== 'no' && userInputs.toLowerCase() !== 'n') { var userInputs = prompt('Invalid answer!'); }
+   while (userInputs === null || userInputs === '') { var userInputs = prompt('Invalid answer!'); }
    if (userInputs.toLowerCase() === 'no' || userInputs.toLowerCase() === 'n') { alert("True"); grade++; }
    else { alert("False"); }
 
@@ -55,8 +55,10 @@ function q7() {
    var countriesList = ['JORDAN', 'ENGLAND', 'UAE', 'USA', 'LEBANON', 'PALASTINE'];
    var correct = false;
    var j = 0;
+// here I force the user to input a value and he/she have 6 real chances to guess.
    while (j <= 5 && correct === false) {
       var favcountry = prompt('Guess what is my fovourate countries?');
+      while (favcountry === null || favcountry === '') { var favcountry = prompt('Guess what is my fovourate countries?'); }
       for (var js = 0; js < countriesList.length; js++) {
          if (favcountry.toUpperCase() === countriesList[js].toUpperCase()) {
             alert("TRUE");
